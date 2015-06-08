@@ -241,7 +241,7 @@ One key goal here is we want to use the same codebase on both server and browser
 
 	- First try the `github issue` section
 
-	- Second, ask in the chat room
+	- Second, ask in the [chat room](https://gitter.im/coodoo/react-alt-isomorphic-example)
 
 	- Lastly, shoot me an [email](jeremy@pubulous.com)
 
