@@ -1,0 +1,37 @@
+{
+  "main": "js/boot.js",
+  "scripts": {
+    "start": "npm run watch& npm run server",
+    "server": "babel-node server.js",
+    "server2": "nodev --debug /Users/jlu/temp/iso-alt-example/node_modules/babel/bin/_babel-node server.js",
+    "build": "browserify js/boot.js > build/bundle.js",
+    "watch": "watchify . -o build/bundle.js -v -d -p browserify-notify"
+  },
+  "browserify": {
+    "transform": [
+      "babelify",
+      "reactify",
+      "envify"
+    ]
+  },
+  "dependencies": {
+    "alt": "^0.16.10",
+    "babel": "^5.5.5",
+    "browserify-notify": "^1.1.2",
+    "es6-promise": "^2.2.0",
+    "express": "^4.12.4",
+    "object-assign": "^3.0.0",
+    "page": "^1.6.3",
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.4",
+    "envify": "^3.4.0",
+    "es5-shim": "^4.1.5",
+    "iso": "^4.1.0",
+    "reactify": "^1.1.1",
+    "uglify-js": "^2.4.23",
+    "watchify": "*"
+  }
+}
