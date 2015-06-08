@@ -2,6 +2,8 @@
 isomorphic-react-with-alt
 =========================
 
+[![Join the chat at https://gitter.im/coodoo/react-alt-isomorphic-example](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/coodoo/react-alt-isomorphic-example?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Preface
 
 This is an example showcasing how to build isomorphic react application with [`Alt`](https://github.com/goatslacker/alt) which utilizes same codebase on both server and browser and can correctly handle multiple requests at one time.
@@ -241,7 +243,7 @@ One key goal here is we want to use the same codebase on both server and browser
 
 	- First try the `github issue` section
 
-	- Second, ask in the chat room
+	- Second, ask in the [chat room](https://gitter.im/coodoo/react-alt-isomorphic-example)
 
 	- Lastly, shoot me an [email](jeremy@pubulous.com)
 
