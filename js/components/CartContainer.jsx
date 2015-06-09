@@ -1,54 +1,59 @@
 'use strict';
 
-var React = require('react');
-var Cart = require('./Cart.jsx');
+var React = require( 'react' );
+var Cart = require( './Cart.jsx' );
 
-var CartContainer = React.createClass({
+function foo () {
+	console.log( 'dd' );
+}
 
-    // jxiso: 宣告取得 flux
-    contextTypes: {
-        flux: React.PropTypes.object.isRequired
-    },
+var CartContainer = React.createClass( {
 
-	_getStateFromStores: function () {
-	    return {
-	        products: this.CartStore.getAddedProducts(),
-	        total: this.CartStore.getTotal()
-	    };
+	// jxiso: 宣告取得 flux
+	contextTypes: {
+		flux: React.PropTypes.object.isRequired
 	},
 
-    getInitialState: function() {
-        this.flux = this.context.flux;
-        this.ActionCreators = this.flux.getActions('ActionCreators');
-        this.CartStore = this.flux.getStore('CartStore');
-        return this._getStateFromStores();
-    },
+	_getStateFromStores: function(){
+		return {
+			products: this.CartStore.getAddedProducts(),
+			total: this.CartStore.getTotal()
+		};
+	},
 
-    componentDidMount: function() {
-        this.CartStore.listen(this._onChange);
-    },
+	getInitialState: function(){
+		this.flux = this.context.flux;
+		this.ActionCreators = this.flux.getActions( 'ActionCreators' );
+		this.CartStore = this.flux.getStore( 'CartStore' );
+		return this._getStateFromStores();
+	},
 
-    componentWillUnmount: function() {
-        this.CartStore.unlisten(this._onChange);
-    },
+	componentDidMount: function(){
+		this.CartStore.listen( this._onChange );
+	},
 
-    onCheckoutClicked: function() {
-        if (!this.state.products.length) {
-            return;
-        }
-        this.ActionCreators.cartCheckout(this.state.products);
-    },
+	componentWillUnmount: function() {
+		this.CartStore.unlisten( this._onChange );
+	},
 
-    render: function() {
-        return ( <Cart products= {this.state.products}
-            total= {this.state.total}
-            onCheckoutClicked= {this.onCheckoutClicked}
-            />);
-    },
+	onCheckoutClicked: function() {
+		if ( !this.state.products.length ) {
+			return;
+		}
 
-    _onChange: function() {
-        this.setState(this._getStateFromStores());
-    }
-});
+		this.ActionCreators.cartCheckout( this.state.products );
+	},
+
+	render: function() {
+		return ( <Cart products= {this.state.products}
+		total= {this.state.total}
+		onCheckoutClicked= {this.onCheckoutClicked}
+		/> );
+	},
+
+	_onChange: function() {
+		this.setState( this._getStateFromStores() );
+	}
+} );
 
 module.exports = CartContainer;

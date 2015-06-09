@@ -1,0 +1,136 @@
+{
+  "esprima": "esprima-fb",
+  "fileExtensions": [".js", ".jsx"],
+  "preset": "airbnb",
+  "excludeFiles": [
+    "node_modules/**",
+    "lib/**",
+    ".jscsrc/**",
+    "data/**",
+    "package/**",
+    "shared/**"
+  ],
+  "esnext": true,
+
+  "requireSpacesInNamedFunctionExpression": {
+      "beforeOpeningCurlyBrace": true
+    },
+    "requireSpacesInFunctionExpression": {
+      "beforeOpeningCurlyBrace": true
+    },
+    "requireSpacesInAnonymousFunctionExpression": {
+      "beforeOpeningCurlyBrace": true
+    },
+    "requireSpacesInFunctionDeclaration": {
+      "beforeOpeningCurlyBrace": true
+    },
+    "disallowSpacesInFunction": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "disallowEmptyBlocks": true,
+    "disallowSpacesInsideArrayBrackets": true,
+    "disallowSpacesInsideParentheses": { "only": [ "{", "}", "(", ")" ] },
+    "disallowQuotedKeysInObjects": "allButReserved",
+    "disallowSpaceAfterObjectKeys": true,
+    "disallowSpaceAfterPrefixUnaryOperators": true,
+    "disallowSpaceBeforePostfixUnaryOperators": true,
+    "disallowSpaceBeforeBinaryOperators": [
+      ","
+    ],
+    "disallowMixedSpacesAndTabs": true,
+    "disallowTrailingWhitespace": true,
+    "disallowTrailingComma": true,
+    "disallowKeywords": [ "with" ],
+    "disallowMultipleLineBreaks": true,
+    "requireYodaConditions": true,
+    "requireSpaceBeforeBlockStatements": true,
+    "requireParenthesesAroundIIFE": true,
+    "requireSpacesInConditionalExpression": true,
+    "requireMultipleVarDecl": "onevar",
+    "requireBlocksOnNewline": 1,
+    "requireCommaBeforeLineBreak": true,
+    "requireSpaceBeforeBinaryOperators": true,
+    "requireSpaceAfterBinaryOperators": true,
+    "requireLineFeedAtFileEnd": true,
+    "requireCapitalizedConstructors": true,
+    "requireDotNotation": true,
+    "requireCurlyBraces": [
+	    "if",
+	    "else",
+	    "for",
+	    "while",
+	    "do",
+	    "try",
+	    "catch"
+	  ],
+    "requireSpaceAfterKeywords": [
+      "if",
+      "else",
+      "for",
+      "while",
+      "do",
+      "switch",
+      "case",
+      "return",
+      "try",
+      "catch",
+      "typeof"
+    ],
+    "safeContextKeyword": "target",
+    "validateLineBreaks": "LF",
+    "validateQuoteMarks": "\"",
+  	"validateIndentation": "\t",
+  "requireOperatorBeforeLineBreak": true,
+  "requireSpacesInsideParentheses": "all",
+  "maximumLineLength": {
+    "value": 120,
+    "allowComments": true,
+    "allowRegex": true
+  },
+  "disallowMultipleLineStrings": true,
+  "disallowKeywordsOnNewLine": [
+    "else"
+  ],
+  "requireSpaceBeforeBinaryOperators": [
+    "=",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "%=",
+    "<<=",
+    ">>=",
+    ">>>=",
+    "&=",
+    "|=",
+    "^=",
+    "+=",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "<<",
+    ">>",
+    ">>>",
+    "&",
+    "|",
+    "^",
+    "&&",
+    "||",
+    "===",
+    "==",
+    ">=",
+    "<=",
+    "<",
+    ">",
+    "!=",
+    "!=="
+  ],
+  "requireSpacesInForStatement": true,
+  "validateJSDoc": {
+    "checkParamNames": true,
+    "requireParamTypes": true
+  },
+  "disallowNewlineBeforeBlockStatements": true
+}

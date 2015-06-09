@@ -23,9 +23,9 @@ var Cart = React.createClass({
 	},
 
 	render: function () {
-	  var products = this.props.products;
+  var products = this.props.products;
 
-	  var hasProducts = products.length > 0;
+  var hasProducts = products.length > 0;
 	  var nodes = !hasProducts ?
 	  <div>Please add some products to cart.</div> :
 	    products.map(function (p) {

@@ -4,10 +4,21 @@ isomorphic-react-with-alt
 
 ## Preface
 
-This is an example showcasing how to build isomorphic react application with [`Alt`](https://github.com/goatslacker/alt) which utilizes same codebase on both server and browser and can correctly handle multiple requests at one time.
+This is an example showcasing how to build isomorphic react application with [`Alt`](https://github.com/goatslacker/alt) which utilizes the same codebase on both server and browser and able to correctly handle multiple requests at one time.
 
-Feel free to ask questions and send pull requests.
+Feel free to [ask questions](https://github.com/coodoo/react-alt-isomorphic-example/issues), [chat](https://gitter.im/coodoo/react-alt-isomorphic-example?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) or send over pull requests.
 
+## Features Highlights
+
+There are already a bunch of isomorphic examples out there, what's special about this one?
+
+- it showcased __client-side routing__ using normal flux `store` (see `RouteStore.js`)
+
+- it reuses data-fetching logics, no need to dupe them on the server and trying to keep both in sync in the future
+
+- it uses `Alt` in a multiple-instance way instead of singleton, which is easier to maintain in the long run
+
+- it's implementation is extremely simple and easy to understand
 
 ## Why Isomorphic
 
@@ -22,11 +33,11 @@ Feel free to ask questions and send pull requests.
 
 - reuse same codebase on both browser and server without any modification
 
-- must be able to handle multiple requests on the server at the same time without conflicting with each other
+- must be able to handle multiple requests on the server at the same time without polluting each other's data stores
 
 - the approach must be easily understandable and simple to develop and maintain
 
-- still applicable to browser-only application when isomorphic is not needed
+- applicable to both isomorphic or browser-only applications
 
 ## Key problems solved with this approach
 
@@ -39,11 +50,6 @@ Feel free to ask questions and send pull requests.
 - passing same data between browser and server to save a round trip
 
 
-## Additional Features Highlights
-
-- demostrated how to handle client-side rourting as a normal `store` (see `RouteStore.js`)
-
-- reuse all data-fetching logics, no need to dupe them on the server and trying to keep both in sync in the future
 
 ## Why Alt
 
