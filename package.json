@@ -21,7 +21,6 @@
     "browserify-notify": "^1.1.2",
     "es6-promise": "^2.2.0",
     "express": "^4.12.4",
-    "extract-text-webpack-plugin": "^0.8.1",
     "json-loader": "^0.5.2",
     "node-libs-browser": "^0.5.2",
     "object-assign": "^3.0.0",

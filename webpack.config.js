@@ -1,6 +1,5 @@
 var path = require('path');
 var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var config = {
     entry: {
@@ -17,19 +16,9 @@ var config = {
             { test: /\.jsx$/, loader: 'babel-loader?stage=0' },
             { test: /\.js$/, loader: 'babel-loader?stage=0' },
             { test: /\.json$/, loader: 'json-loader'}
-            //
-            // {
-            //     test: /\.css$/, loader: ExtractTextPlugin.extract(
-            //                 'css-loader?sourceMap!postcss-loader')
-            // }
         ]
     },
-    resolve: {
-      extensions: [ '', '.js', '.jsx']
-    },
 
-    //plugins: [new ExtractTextPlugin('main.css')],
-    //postcss: [require('autoprefixer-core'), require('csswring')({map: true})],
     debug: true,
     devtool: 'source-map'
 };
