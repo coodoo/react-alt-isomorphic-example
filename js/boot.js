@@ -10,7 +10,7 @@ var Iso = require('iso');
 var Flux = require('./flux');
 var flux = new Flux();
 
-// 這是 client app 負則將 server encode 好的資料還還並灌入 store 中
+// 這是 client app 負責將 server encode 好的資料還還並灌入 store 中
 Iso.bootstrap(function (state, meta, container) {
 
 	// console.log( '有跑 Iso.bootstrap():\n', state);
