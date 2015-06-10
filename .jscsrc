@@ -78,7 +78,7 @@
     ],
     "safeContextKeyword": "target",
     "validateLineBreaks": "LF",
-    "validateQuoteMarks": "\"",
+    "validateQuoteMarks": "'",
   	"validateIndentation": "\t",
   "requireOperatorBeforeLineBreak": true,
   "requireSpacesInsideParentheses": "all",
