@@ -16,7 +16,7 @@ var config = {
         loaders: [
             { test: /\.jsx$/, loader: 'babel-loader?stage=0' },
             { test: /\.js$/, loader: 'babel-loader?stage=0' },
-            { test: /\.json$/, loader: 'json'}
+            { test: /\.json$/, loader: 'json-loader'}
             //
             // {
             //     test: /\.css$/, loader: ExtractTextPlugin.extract(
