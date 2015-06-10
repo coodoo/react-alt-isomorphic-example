@@ -4,7 +4,7 @@
     "start": "npm run watch& npm run server",
     "server": "babel-node server.js",
     "watch": "npm run build -- --watch",
-    "build": "webpack --config=./webpack.config.js --progress",
+    "build": "webpack --config=./webpack.config.js --progress"
   },
   "browserify": {
     "transform": [
