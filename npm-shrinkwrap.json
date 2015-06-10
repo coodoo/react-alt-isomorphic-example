@@ -18,7 +18,7 @@
         "flux": {
           "version": "2.0.3",
           "from": "flux@2.0.3",
-          "resolved": "https://raw.githubusercontent.com/coodoo/foo/master/flux.tgz"
+          "resolved": "https://raw.githubusercontent.com/coodoo/react-alt-isomorphic-example/master/flux.tgz"
         }
       }
     },
