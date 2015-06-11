@@ -255,4 +255,4 @@ One key goal here is we want to use the same codebase on both server and browser
 
 ## Notice
 
-- currently we are relying on a custom-built `flux dispatcher` due to the version available on npm is outdated, once the npm one's updated to the latest `v2.0.3` we will remove the custom-built one.
+- currently we are depending on a custom-built `flux dispatcher` using `npm-shrinkwrap.json` due to the version available on npm is outdated, once that's updated to the latest one we will remove the dependency.

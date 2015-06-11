@@ -3,8 +3,7 @@
   "scripts": {
     "start": "npm run watch& npm run server",
     "server": "babel-node server.js",
-    "server2": "nodev --debug /Users/jlu/temp/iso-alt-example/node_modules/babel/bin/_babel-node server.js",
-    "build": "browserify js/boot.js > build/bundle.js",
+    "build": "rm -rf build && mkdir build && browserify js/boot.js > build/bundle.js",
     "watch": "watchify . -o build/bundle.js -v -d -p browserify-notify"
   },
   "browserify": {
