@@ -60,7 +60,7 @@ routines.forEach((item) => {
 
     app.get(item.path, (req, res) => {
 
-        // console.log( 'server routing rule> ', item );
+        console.log( '\n\nserver routing rule> ', req.url );
 
         // 每個 request 進來都建新的 flux instance
         var flux = new Flux();

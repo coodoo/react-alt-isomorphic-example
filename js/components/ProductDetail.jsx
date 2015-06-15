@@ -1,28 +1,28 @@
 'use strict';
 
-var React = require('react');
+var React = require( 'react' );
 
-var ProductDetail = React.createClass({
+var ProductDetail = React.createClass( {
 
 	propTypes: {
-		product: React.PropTypes.shape({
+		product: React.PropTypes.shape( {
 			image: React.PropTypes.string.isRequired,
 			title: React.PropTypes.string.isRequired,
 			price: React.PropTypes.number.isRequired,
 			inventory: React.PropTypes.number.isRequired
-		}).isRequired
+		} ).isRequired
 	},
 
 	contextTypes: {
 	    flux: React.PropTypes.object.isRequired
 	},
 
-	getInitialState: function(){
-		this.ActionCreators = this.context.flux.getActions('ActionCreators');
+	getInitialState: function() {
+		this.ActionCreators = this.context.flux.getActions( 'ActionCreators' );
 		return {};
 	},
 
-	render: function () {
+	render: function() {
 		var product = this.props.product;
 
 		var styles = {
@@ -43,9 +43,9 @@ var ProductDetail = React.createClass({
 		);
 	},
 
-	onAddToCartClicked: function(){
+	onAddToCartClicked: function() {
 		this.ActionCreators.addToCart( this.props.product );
 	}
-});
+} );
 
 module.exports = ProductDetail;

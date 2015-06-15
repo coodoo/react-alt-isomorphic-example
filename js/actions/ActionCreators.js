@@ -1,5 +1,7 @@
 'use strict';
 
+var k = "ff";
+
 var WebAPIUtils = require('../utils/WebAPIUtils');
 var Promise = require('es6-promise').Promise;
 
