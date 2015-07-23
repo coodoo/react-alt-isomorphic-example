@@ -237,7 +237,7 @@ One key goal here is we want to use the same codebase on both server and browser
 
 ## FAQ
 
-- why not use react-router?
+- why avoid using react-router?
 
 	IMHO __router should not be tightly coupled with the view in any regard__, wrapping it in a `RouteStore` is more flexible and decoupled, also we get to switch out different routers in the future (we used `page.js` in this example, but we tried a bunch of other routers which all worked pretty well)
 
